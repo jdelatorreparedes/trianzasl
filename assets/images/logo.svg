@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="triangleGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+    <linearGradient id="metallicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Geometric Triangle Icon -->
+  <g transform="translate(10, 5)">
+    <!-- Outer Triangle Frame -->
+    <path d="M 45 5 L 85 85 L 5 85 Z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="miter" class="logo-stroke" />
+    <!-- Internal Structural Beams -->
+    <path d="M 45 5 L 45 85" stroke="currentColor" stroke-width="5" class="logo-stroke" />
+    <path d="M 45 28 L 72 85" stroke="currentColor" stroke-width="5" class="logo-stroke" />
+    <path d="M 45 50 L 22 85" stroke="currentColor" stroke-width="5" class="logo-stroke" />
+    <path d="M 28 50 L 62 50" stroke="currentColor" stroke-width="5" class="logo-stroke" />
+  </g>
+
+  <!-- Company Text -->
+  <g transform="translate(105, 10)">
+    <!-- TRIANZA Main Title -->
+    <text x="0" y="38" font-family="'Outfit', 'Inter', 'Arial Black', sans-serif" font-weight="900" font-size="34" letter-spacing="3" fill="currentColor" class="logo-text-primary">TRIANZA</text>
+    
+    <!-- Subtitle OBRAS Y SERVICIOS S.L. -->
+    <text x="2" y="58" font-family="'Inter', 'Roboto', sans-serif" font-weight="700" font-size="13" letter-spacing="4" fill="currentColor" opacity="0.85" class="logo-text-secondary">OBRAS Y SERVICIOS S.L.</text>
+    
+    <!-- Tagline -->
+    <text x="2" y="74" font-family="'Inter', 'Roboto', sans-serif" font-weight="600" font-size="9" letter-spacing="5" fill="#0284c7" class="logo-tagline">— CONSTRUIMOS CONFIANZA —</text>
+  </g>
+</svg>
