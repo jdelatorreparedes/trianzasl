@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <title>Política de Privacidad | Trianza Obras y Servicios S.L.</title>
   <meta name="description" content="Política de privacidad y protección de datos de Trianza Obras y Servicios, S.L.">
   <meta name="robots" content="noindex">
@@ -10,11 +12,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo_oficial_sello_transparent.png">
 
+  <!-- Self-hosted fonts (Inter & Space Grotesk) -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
@@ -29,19 +34,19 @@
           TRIANZA <span>S.L.</span>
         </a>
 
-        <button class="nav-toggle-mobile" id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú Móvil">
+        <button class="nav-toggle-mobile" id="mobile-menu-btn" aria-label="Menú Móvil">
           <i class="fa-solid fa-bars"></i>
         </button>
 
         <ul class="nav-links" id="nav-menu">
-          <li><a href="index.html#inicio" class="nav-link" onclick="closeMobileMenu()">Inicio</a></li>
-          <li><a href="index.html#compromiso" class="nav-link" onclick="closeMobileMenu()">Filosofía</a></li>
-          <li><a href="index.html#especialidades" class="nav-link" onclick="closeMobileMenu()">Especialidades</a></li>
-          <li><a href="index.html#colaboracion" class="nav-link" onclick="closeMobileMenu()">Colaboración</a></li>
-          <li><a href="index.html#contacto" class="nav-link" onclick="closeMobileMenu()">Contacto</a></li>
+          <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="index.html#compromiso" class="nav-link">Filosofía</a></li>
+          <li><a href="index.html#especialidades" class="nav-link">Especialidades</a></li>
+          <li><a href="index.html#colaboracion" class="nav-link">Colaboración</a></li>
+          <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
           <li>
-            <a href="mailto:info@trianzasl.com" class="nav-cta-email">
-              <i class="fa-solid fa-envelope"></i> info@trianzasl.com
+            <a href="#" class="nav-cta-email js-email" data-user="info" data-domain="trianzasl.com">
+              <i class="fa-solid fa-envelope"></i> <span class="js-email-text"></span>
             </a>
           </li>
         </ul>
@@ -65,7 +70,7 @@
             <li><strong>Responsable:</strong> TRIANZA OBRAS Y SERVICIOS, S.L.</li>
             <li><strong>CIF:</strong> B-23978166</li>
             <li><strong>Domicilio:</strong> C/José Raga Mas, 10 — 46439 Sollana (Valencia)</li>
-            <li><strong>Correo electrónico:</strong> <a href="mailto:info@trianzasl.com">info@trianzasl.com</a></li>
+            <li><strong>Correo electrónico:</strong> <a href="#" class="js-email" data-user="info" data-domain="trianzasl.com"><span class="js-email-text"></span></a></li>
           </ul>
 
           <h2>2. Datos que tratamos</h2>
@@ -95,7 +100,7 @@
 
           <h2>7. Sus derechos</h2>
           <p>
-            Usted puede ejercer en cualquier momento sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de los datos, dirigiéndose por escrito a <a href="mailto:info@trianzasl.com">info@trianzasl.com</a>, indicando el derecho que desea ejercer y adjuntando copia de un documento que acredite su identidad. Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es) si considera que el tratamiento no se ajusta a la normativa vigente.
+            Usted puede ejercer en cualquier momento sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de los datos, dirigiéndose por escrito a <a href="#" class="js-email" data-user="info" data-domain="trianzasl.com"><span class="js-email-text"></span></a>, indicando el derecho que desea ejercer y adjuntando copia de un documento que acredite su identidad. Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es) si considera que el tratamiento no se ajusta a la normativa vigente.
           </p>
 
           <h2>8. Medidas de seguridad</h2>
@@ -138,7 +143,7 @@
             <p>C/José Raga Mas, 10</p>
             <p>46439 Sollana (Valencia)</p>
             <p style="margin-top: 8px;">CIF: B-23978166</p>
-            <p style="margin-top: 8px;"><a href="mailto:info@trianzasl.com" style="color: var(--accent-secondary); text-decoration: none; font-weight: 700;">info@trianzasl.com</a></p>
+            <p style="margin-top: 8px;"><a href="#" class="js-email" data-user="info" data-domain="trianzasl.com" style="color: var(--accent-secondary); text-decoration: none; font-weight: 700;"><span class="js-email-text"></span></a></p>
           </div>
         </div>
 

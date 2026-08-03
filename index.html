@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <title>Trianza Obras y Servicios S.L. | Albañilería Industrial & Obra Civil</title>
   <meta name="description" content="Trianza Obras y Servicios, S.L. Especialistas en albañilería industrial, subestaciones eléctricas, redes de distribución y transporte, canalizaciones de telecomunicaciones y adecuación de infraestructuras en Sollana (Valencia).">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo_oficial_sello_transparent.png">
 
+  <!-- Self-hosted fonts (Inter & Space Grotesk) -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
   
   <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
@@ -30,20 +35,20 @@
         </a>
 
         <!-- Mobile Toggle Button -->
-        <button class="nav-toggle-mobile" id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú Móvil">
+        <button class="nav-toggle-mobile" id="mobile-menu-btn" aria-label="Menú Móvil">
           <i class="fa-solid fa-bars"></i>
         </button>
 
         <!-- Streamlined Navigation Links (Includes Inicio) -->
         <ul class="nav-links" id="nav-menu">
-          <li><a href="#inicio" class="nav-link" onclick="closeMobileMenu()">Inicio</a></li>
-          <li><a href="#compromiso" class="nav-link" onclick="closeMobileMenu()">Filosofía</a></li>
-          <li><a href="#especialidades" class="nav-link" onclick="closeMobileMenu()">Especialidades</a></li>
-          <li><a href="#colaboracion" class="nav-link" onclick="closeMobileMenu()">Colaboración</a></li>
-          <li><a href="#contacto" class="nav-link" onclick="closeMobileMenu()">Contacto</a></li>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#compromiso" class="nav-link">Filosofía</a></li>
+          <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+          <li><a href="#colaboracion" class="nav-link">Colaboración</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
           <li>
-            <a href="mailto:info@trianzasl.com" class="nav-cta-email">
-              <i class="fa-solid fa-envelope"></i> info@trianzasl.com
+            <a href="#" class="nav-cta-email js-email" data-user="info" data-domain="trianzasl.com">
+              <i class="fa-solid fa-envelope"></i> <span class="js-email-text"></span>
             </a>
           </li>
         </ul>
@@ -69,8 +74,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="mailto:info@trianzasl.com" class="btn-primary">
-              <i class="fa-solid fa-paper-plane"></i> Contactar vía Email (info@trianzasl.com)
+            <a href="#" class="btn-primary js-email" data-user="info" data-domain="trianzasl.com">
+              <i class="fa-solid fa-paper-plane"></i> Contactar vía Email (<span class="js-email-text"></span>)
             </a>
           </div>
         </div>
@@ -220,7 +225,7 @@
                 <li><i class="fa-solid fa-circle-check"></i> Capacidad de adaptación técnica a especificaciones específicas de cada cliente.</li>
               </ul>
 
-              <a href="mailto:info@trianzasl.com" class="btn-primary">
+              <a href="#" class="btn-primary js-email" data-user="info" data-domain="trianzasl.com">
                 <i class="fa-solid fa-paper-plane"></i> Contactar para Futuros Proyectos
               </a>
             </div>
@@ -252,7 +257,7 @@
 
           <div class="email-highlight-box">
             <i class="fa-solid fa-envelope" style="font-size: 2.2rem; color: var(--accent-secondary);"></i>
-            <a href="mailto:info@trianzasl.com" class="email-address-text">info@trianzasl.com</a>
+            <a href="#" class="email-address-text js-email" data-user="info" data-domain="trianzasl.com"><span class="js-email-text"></span></a>
           </div>
 
           <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
@@ -309,7 +314,7 @@
             <p>C/José Raga Mas, 10</p>
             <p>46439 Sollana (Valencia)</p>
             <p style="margin-top: 8px;">CIF: B-23978166</p>
-            <p style="margin-top: 8px;"><a href="mailto:info@trianzasl.com" style="color: var(--accent-secondary); text-decoration: none; font-weight: 700;">info@trianzasl.com</a></p>
+            <p style="margin-top: 8px;"><a href="#" class="js-email" data-user="info" data-domain="trianzasl.com" style="color: var(--accent-secondary); text-decoration: none; font-weight: 700;"><span class="js-email-text"></span></a></p>
           </div>
         </div>
 
