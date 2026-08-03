@@ -691,17 +691,6 @@ body {
   margin: 0 auto;
 }
 
-.legal-notice {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-left: 4px solid var(--accent-secondary);
-  border-radius: var(--radius-sm);
-  padding: 16px 20px;
-  margin-bottom: 40px;
-  font-size: 0.92rem;
-  color: var(--text-muted);
-}
-
 .legal-content h2 {
   font-family: var(--font-heading);
   font-size: 1.3rem;
