@@ -127,6 +127,12 @@ body {
   color: var(--accent-secondary);
 }
 
+.nav-brand-logo {
+  height: 38px;
+  width: 38px;
+  object-fit: contain;
+}
+
 .nav-toggle-mobile {
   display: none;
   background: transparent;
